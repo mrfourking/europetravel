@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+
+  min-width: $min-mobile-width;
+  margin: 0;
+
+  font-family: "Montserrat", "Verdana", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  font-style: normal;
+  color: $text-color;
+
+  background-color: $body-bg-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}

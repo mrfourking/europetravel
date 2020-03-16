@@ -1,0 +1,17 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin interactive {
+  &:hover {
+    opacity: 0.3;
+    transition: opacity 0.2s ease;
+  }
+
+  &:active {
+    opacity: 0.1;
+    transition: opacity 0.2s ease;
+  }
+}
