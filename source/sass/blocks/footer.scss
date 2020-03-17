@@ -76,11 +76,41 @@
   }
 
   .footer__corporative {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     padding-top: 30px;
 
     text-align: center;
 
     border-top: 1px solid $footer-border-color;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer {
+    flex-direction: column;
+    padding: 70px 12px 35px;
+  }
+
+  .footer__next-travels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+
+    border: none;
+    border-bottom: 1px solid $footer-border-color;
+  }
+
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 }

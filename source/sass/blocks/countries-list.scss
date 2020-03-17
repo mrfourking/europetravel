@@ -31,3 +31,28 @@
     margin-right: 30px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .countries-list {
+    justify-content: center;
+  }
+
+  .countries-list__item {
+    width: 134px;
+    margin-right: 0;
+  }
+
+  .countries-list__sublist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .countries-list__sublist-item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
