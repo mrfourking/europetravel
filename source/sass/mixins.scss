@@ -4,13 +4,28 @@
   list-style: none;
 }
 
-@mixin interactive {
+@mixin contacts-interactive {
   &:hover {
+    color: $accent-color-hover;
+    transition: color 0.2s ease;
     opacity: 0.8;
     transition: opacity 0.2s ease;
   }
 
   &:active {
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+  }
+}
+
+@mixin link-interactive {
+  &:hover {
+    color: $accent-color;
+    transition: color 0.2s ease;
+  }
+
+  &:active {
+    color: $accent-color-hover;
     opacity: 0.5;
     transition: opacity 0.2s ease;
   }

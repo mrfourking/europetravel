@@ -381,6 +381,9 @@ a {
   .contacts svg {
     margin-right: 10px; }
   .contacts:hover {
+    color: #f17d4b;
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease;
     opacity: 0.8;
     -webkit-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease; }
@@ -439,6 +442,11 @@ a {
     color: #fe7865;
     -webkit-transition: color 0.2s ease;
     transition: color 0.2s ease; }
+  .header__menu-link:active {
+    color: #f17d4b;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease; }
 
 .header__menu-icon {
   display: none; }
@@ -564,6 +572,17 @@ a {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+.countries-list__sublist-item a:hover {
+  color: #fe7865;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease; }
+
+.countries-list__sublist-item a:active {
+  color: #f17d4b;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease; }
 
 @media (max-width: 1023px) {
   .countries-list {

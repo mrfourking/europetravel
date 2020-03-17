@@ -29,10 +29,7 @@
   font-weight: 500;
   color: $dark-color;
 
-  &:hover {
-    color: $accent-color;
-    transition: color 0.2s ease;
-  }
+  @include link-interactive;
 }
 
 .header__menu-icon {

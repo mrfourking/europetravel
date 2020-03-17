@@ -11,7 +11,7 @@
     margin-right: 10px;
   }
 
-  @include interactive;
+  @include contacts-interactive;
 
   &--footer-mail {
     font-size: inherit;

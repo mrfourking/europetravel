@@ -20,6 +20,12 @@
   @include reset-list;
 }
 
+.countries-list__sublist-item {
+  a {
+    @include link-interactive;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .countries-list {
     justify-content: flex-start;
