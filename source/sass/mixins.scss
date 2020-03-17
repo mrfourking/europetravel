@@ -7,9 +7,8 @@
 @mixin contacts-interactive {
   &:hover {
     color: $accent-color-hover;
-    transition: color 0.2s ease;
     opacity: 0.8;
-    transition: opacity 0.2s ease;
+    transition: color opacity 0.2s ease;
   }
 
   &:active {
