@@ -1,0 +1,16 @@
+.countries-list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.countries-list__item {
+  margin-right: 23px;
+  margin-bottom: 20px;
+}
+
+.countries-list__sublist {
+  @include reset-list;
+}

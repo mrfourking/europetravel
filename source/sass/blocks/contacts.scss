@@ -1,0 +1,24 @@
+.contacts {
+  display: flex;
+  align-items: center;
+
+  font-size: 18px;
+  line-height: 32px;
+  color: $accent-color;
+  text-decoration: underline;
+
+  svg {
+    margin-right: 10px;
+  }
+
+  @include interactive;
+
+  &--footer-mail {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  &--footer-phone {
+    font-size: 16px;
+  }
+}

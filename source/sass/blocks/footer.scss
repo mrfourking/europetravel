@@ -1,0 +1,53 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0 20% 75px 20.2%;
+
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $dark-color;
+}
+
+.footer__next-travels {
+  flex-grow: 1;
+  width: 30%;
+  margin-right: auto;
+  padding-right: 2.5%;
+
+  border-right: 1px solid $footer-border-color;
+}
+
+.footer__contacts {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  margin-right: 4.4%;
+  padding-right: 33px;
+  padding-left: 7.9%;
+
+  border-right: 1px solid $footer-border-color;
+}
+
+.footer__mail {
+  margin-bottom: 18px;
+}
+
+.footer__corporative {
+  flex-grow: 1;
+  width: 30%;
+}
+
+.footer__offer {
+  line-height: 24px;
+}

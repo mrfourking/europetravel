@@ -40,20 +40,7 @@
 }
 
 .header__phone {
-  display: flex;
-  align-items: center;
   margin-top: -4px;
-
-  font-size: 18px;
-  line-height: 32px;
-  color: $accent-color;
-  text-decoration: underline;
-
-  svg {
-    margin-right: 10px;
-  }
-
-  @include interactive;
 }
 
 .header__menu-button {
