@@ -394,6 +394,15 @@ a {
   .contacts--footer-phone {
     font-size: 16px; }
 
+.contacts__text--tablet {
+  display: none; }
+
+@media (max-width: 1023px) {
+  .contacts__text--desktop {
+    display: none; }
+  .contacts__text--tablet {
+    display: inline; } }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -545,13 +554,26 @@ a {
       flex-wrap: wrap; }
 
 .countries-list__item {
+  max-width: 95px;
   margin-right: 23px;
   margin-bottom: 20px; }
+  .countries-list__item:last-child {
+    margin-right: 0; }
 
 .countries-list__sublist {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+@media (max-width: 1023px) {
+  .countries-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .countries-list__item {
+    min-width: 95px;
+    max-width: none;
+    margin-right: 30px; } }
 
 .footer {
   display: -webkit-box;
@@ -562,7 +584,7 @@ a {
           justify-content: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding: 0 20% 75px 20.2%;
+  padding: 170px 20% 75px 20.2%;
   font-size: 14px;
   line-height: 17px; }
 
@@ -610,5 +632,30 @@ a {
 
 .footer__offer {
   line-height: 24px; }
+
+@media (max-width: 1023px) {
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 80px 21px 50px; }
+  .footer__next-travels {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    width: 396px;
+    margin-bottom: 30px;
+    padding-right: 50px; }
+  .footer__contacts {
+    width: auto;
+    margin: 0;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 0;
+    border: none; }
+  .footer__corporative {
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    border-top: 1px solid #d7d9df; } }
 
 /*# sourceMappingURL=style.css.map */
