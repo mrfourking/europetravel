@@ -1,0 +1,180 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 39px 19.6% 32px 19.7%;
+
+  color: $dark-color;
+}
+
+.header__menu {
+  @include reset-list;
+
+  display: flex;
+  margin-left: auto;
+  margin-top: -5px;
+  margin-right: 13px;
+
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+}
+
+.header__menu-item {
+  margin-right: 40px;
+}
+
+.header__menu-link {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  color: $dark-color;
+
+  &:hover {
+    color: $accent-color;
+    transition: color 0.2s ease;
+  }
+}
+
+.header__menu-icon {
+  display: none;
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  margin-top: -4px;
+
+  font-size: 18px;
+  line-height: 32px;
+  color: $accent-color;
+  text-decoration: underline;
+
+  svg {
+    margin-right: 10px;
+  }
+
+  @include interactive;
+}
+
+.header__menu-button {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .header {
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .header__logo {
+    margin-left: 21px;
+    width: 44px;
+    height: 17px;
+  }
+
+  .header__menu {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 97px 0;
+
+    background-color: $body-bg-color;
+
+    &--open {
+      display: flex;
+    }
+
+    &--nojs {
+      display: flex;
+      position: relative;
+      order: 10;
+      padding-top: 47px;
+    }
+  }
+
+  .header__menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 15px 16px 17px;
+
+    background-color: $menu-item-bg-color;
+  }
+
+  .header__menu-link {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+
+  .header__menu-icon {
+    display: block;
+    margin: 10px 20px;
+  }
+
+  .header__phone {
+    display: none;
+  }
+
+  .header__menu-button {
+    display: block;
+    padding: 17px 25px 19px;
+
+    background-color: $accent-color;
+
+    border: none;
+
+    &--open {
+      z-index: 10;
+
+      padding: 15px 20px;
+
+      background-color: transparent;
+    }
+
+    &--nojs {
+      display: none;
+    }
+  }
+
+  .header__icon {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header__logo {
+    margin-left: 16px;
+  }
+
+  .header__menu {
+    padding-top: 134px;
+    padding-bottom: 254px;
+  }
+
+  .header__menu-button {
+    padding: 17px 14px 19px;
+
+    &--open {
+      padding: 15px 14px 16px;
+    }
+  }
+
+  .header__menu-icon {
+    margin: 8px;
+  }
+}
