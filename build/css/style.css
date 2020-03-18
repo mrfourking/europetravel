@@ -597,6 +597,33 @@ a {
   text-transform: uppercase;
   background-color: #fe7865; }
 
+@media (max-width: 1023px) {
+  .main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 60px 185px 83px;
+    background-image: url("../img/start-bg-tablet.jpg");
+    background-position: -58px -265px;
+    background-size: 116.7% auto; }
+  .main__title {
+    width: auto;
+    margin-bottom: 16px;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0; }
+  .main__intro {
+    width: auto;
+    margin-bottom: 11px;
+    padding: 0;
+    text-align: center; }
+  .main__button {
+    width: 250px;
+    padding: 17px 40px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500; } }
+
 .countries-list {
   margin: 0;
   padding: 0;
