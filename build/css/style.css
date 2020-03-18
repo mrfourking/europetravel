@@ -624,6 +624,29 @@ a {
     line-height: 12px;
     font-weight: 500; } }
 
+@media (max-width: 767px) {
+  .main {
+    padding: 0;
+    padding-bottom: 54px;
+    background-image: none; }
+  .main__title {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 82px 20px 84px 25px;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    background-image: url("../img/start-bg-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: 41.3% 95.6%;
+    background-size: 119% auto; }
+  .main__intro {
+    margin: 0 20px 20px;
+    line-height: 27.5px;
+    color: #2c2e3f; }
+  .main__button {
+    width: 288px; } }
+
 .countries-list {
   margin: 0;
   padding: 0;
