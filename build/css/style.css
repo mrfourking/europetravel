@@ -765,9 +765,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
@@ -788,8 +785,43 @@ a {
   .places__item:nth-child(3n) {
     margin-left: 0;
     margin-right: 0; }
-  .places__item:nth-child(4n) {
+  .places__item:nth-child(3n + 4) {
     margin-left: auto; }
+
+@media (max-width: 1023px) {
+  .places {
+    padding: 80px 81px 97px; }
+  .places__wrap {
+    padding: 0;
+    text-align: center; }
+  .places__title {
+    width: auto;
+    margin-bottom: 21px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0; }
+    .places__title::after {
+      display: none; }
+  .places__intro {
+    width: 350px;
+    margin: 0 auto 40px;
+    letter-spacing: -0.4px; }
+  .places__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0; }
+  .places__item {
+    width: 37.5%;
+    max-width: 288px;
+    margin-right: 30px;
+    margin-bottom: 20px; }
+    .places__item:nth-child(3n) {
+      margin-right: 30px; }
+    .places__item:last-child {
+      margin: 8px auto 20px; }
+    .places__item:nth-child(2n) {
+      margin: 0 0 20px; } }
 
 .countries-list {
   margin: 0;
