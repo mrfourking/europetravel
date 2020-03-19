@@ -823,6 +823,34 @@ a {
     .places__item:nth-child(2n) {
       margin: 0 0 20px; } }
 
+@media (max-width: 767px) {
+  .places {
+    padding: 54px 15px 88px; }
+  .places__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 36px; }
+  .places__intro {
+    width: 100%;
+    margin-bottom: 20px; }
+  .places__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .places__item {
+    width: 288px;
+    margin: 0 0 30px; }
+    .places__item:nth-child(3n) {
+      margin: 0 0 30px; }
+    .places__item:last-child {
+      margin: 0; }
+    .places__item:nth-child(2n) {
+      margin: 0 0 30px; } }
+
 .countries-list {
   margin: 0;
   padding: 0;
