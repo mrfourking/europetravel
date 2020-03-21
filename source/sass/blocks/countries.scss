@@ -65,3 +65,10 @@
     width: 100%;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .countries__carousel {
+    margin-left: 16px;
+    margin-bottom: 23px;
+  }
+}
