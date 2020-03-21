@@ -800,7 +800,7 @@ a {
 
 @media (max-width: 1023px) {
   .places {
-    padding: 80px 81px 97px; }
+    padding: 80px 81px 77px; }
   .places__wrap {
     padding: 0;
     text-align: center; }
@@ -868,9 +868,6 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start; }
-  .country img {
-    max-width: 36.8%;
-    margin-left: 10px; }
 
 .country__wrap {
   display: -webkit-box;
@@ -892,13 +889,14 @@ a {
   margin-right: auto;
   padding-top: 8px; }
   .country__wrap p {
+    margin: 0;
     margin-bottom: 50px;
     letter-spacing: -0.5px; }
 
 .country__title {
   position: relative;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 30px;
   padding-bottom: 20px;
   font-size: 55px;
   line-height: 90px;
@@ -927,10 +925,57 @@ a {
   text-align: center;
   background-color: #fe7865; }
 
+.country__image-wrap {
+  width: 36.8%;
+  margin-left: 10px; }
+  .country__image-wrap img {
+    display: block; }
+
 .country__feedback {
   -ms-flex-item-align: center;
       align-self: center;
   margin-left: -9.6%; }
+
+@media (max-width: 1023px) {
+  .country {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .country__wrap {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: none;
+    margin: 0 21px 30px;
+    padding: 0;
+    text-align: center; }
+    .country__wrap p {
+      margin-bottom: 19px; }
+  .country__title {
+    margin-bottom: 21px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0; }
+    .country__title::after {
+      display: none; }
+  .country__button {
+    padding: 19px 0;
+    font-size: 10px;
+    line-height: 12px; }
+  .country__image-wrap {
+    width: 100%;
+    margin: 0; }
+    .country__image-wrap img {
+      width: 100%; }
+  .country__feedback {
+    margin: 0;
+    margin-top: -335px; } }
 
 .countries {
   display: -webkit-box;
@@ -984,6 +1029,17 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+
+@media (max-width: 1023px) {
+  .countries {
+    overflow: hidden;
+    width: 100%;
+    padding: 0; }
+  .countries__carousel {
+    margin-left: 37px;
+    margin-bottom: 33px; }
+  .countries__list {
+    width: 100%; } }
 
 .feedback {
   -ms-flex-negative: 0;
