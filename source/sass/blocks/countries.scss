@@ -1,0 +1,50 @@
+.countries {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px 240px;
+}
+
+.countries__carousel {
+  @include reset-list;
+
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 79px;
+  // padding: 0 60px 14px;
+  padding-bottom: 14px;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  color: $carousel-text-color;
+
+  border-bottom: 1px solid $carousel-text-color;
+}
+
+.countries__carousel-item {
+  margin-right: 100px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--active {
+    color: $accent-color;
+  }
+}
+
+.countries__list {
+  @include reset-list;
+}
+
+.countries__item {
+  display: none;
+
+  &--active {
+    display: flex;
+  }
+}

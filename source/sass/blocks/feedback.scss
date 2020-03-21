@@ -1,0 +1,61 @@
+.feedback {
+  flex-shrink: 0;
+  width: 382px;
+  padding: 30px;
+
+  background-color: $body-bg-color;
+
+  p {
+    margin: 0;
+    margin-bottom: 34px;
+    font-size: 14px;
+    letter-spacing: -0.4px;
+  }
+}
+
+.feedback__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 11px;
+
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 500;
+  color: $dark-color;
+  letter-spacing: -0.7px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 68px;
+    height: 1px;
+
+    background-color: $accent-color;
+  }
+}
+
+.feedback__author {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 38px;
+    margin: 0;
+    margin-right: 16px;
+
+    border-radius: 50%;
+  }
+}
+
+.feedback__name {
+  font-family: "Poppins", "Verdana", sans-serif;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.9px;
+  color: $dark-color;
+}
