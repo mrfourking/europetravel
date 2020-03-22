@@ -1,0 +1,161 @@
+.price {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.price__list {
+  @include reset-list;
+
+  display: flex;
+}
+
+.price__item {
+  width: 370px;
+  margin-right: 30px;
+}
+
+.price__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 291px;
+  margin-left: auto;
+  padding-top: 111px;
+
+  p {
+    margin: 0;
+    margin-bottom: 63px;
+
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+.price__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 31px;
+  padding-bottom: 18px;
+
+  font-size: 55px;
+  line-height: 90px;
+  font-weight: 600;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 175px;
+    height: 3px;
+
+    background-color: $accent-color;
+  }
+}
+
+.price__call {
+  align-self: flex-end;
+  margin-right: 29px;
+  margin-bottom: 13px;
+
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 600;
+  color: $dark-color;
+}
+
+@media (max-width: $tablet-width) {
+  .price {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 78px;
+  }
+
+  .price__wrap {
+    align-items: center;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    p {
+      width: 100%;
+      margin-bottom: 32px;
+    }
+  }
+
+  .price__title {
+    margin-bottom: 22px;
+    padding: 0;
+
+    font-size: 30px;
+    line-height: 45px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .price__call {
+    align-self: center;
+    margin: 0;
+    margin-bottom: 11px;
+
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  .price__phone {
+    margin-bottom: 30px;
+  }
+
+  .price__item {
+    width: 288px;
+    margin-right: 50px;
+
+    &:nth-child(2n),
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .price {
+    padding: 45px 16px 0;
+  }
+
+  .price__wrap {
+    p {
+      margin-bottom: 23px;
+    }
+  }
+
+  .price__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .price__call {
+    margin-bottom: 9px;
+  }
+
+  .price__phone {
+    margin-bottom: 41px;
+  }
+
+  .price__list {
+    flex-direction: column;
+  }
+
+  .price__item {
+    margin: 0;
+    margin-bottom: 23px;
+  }
+}
