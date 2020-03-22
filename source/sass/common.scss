@@ -33,3 +33,22 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.scroll-hidden {
+  overflow: hidden;
+}
+
+.scroll-hidden .modal-wrap {
+  z-index: 50;
+  overflow: auto;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+
+  display: block;
+
+  background: rgba(0, 0, 0, 0.5);
+}

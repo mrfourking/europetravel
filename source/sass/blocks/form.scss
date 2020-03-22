@@ -8,6 +8,15 @@
 
   background-color: $modal-bg-color;
 
+
+  span {
+    position: absolute;
+    top: 166px;
+    left: 73px;
+
+    color: $accent-color;
+  }
+
   form {
     display: flex;
     flex-direction: column;
@@ -23,9 +32,19 @@
     line-height: 17px;
     color: $form-text-color;
 
+    border: 1px solid $input-border-color;
+
     &::placeholder {
       color: inherit;
     }
+
+    &:invalid {
+      border-color: $accent-color;
+    }
+  }
+
+  input[type="tel"] {
+    padding-left: 26px;
   }
 
   label {
@@ -56,18 +75,6 @@
   }
 }
 
-.form__button-close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-
-  margin: 0;
-  padding: 0;
-
-  background-color: transparent;
-  border: none;
-}
-
 .form__title {
   margin: 0;
   margin-bottom: 50px;
@@ -76,4 +83,20 @@
   line-height: 43px;
   font-weight: 600;
   color: $form-text-color;
+}
+
+@media (max-width: $mobile-width) {
+  .form {
+    padding: 100px 16px 188px;
+
+    span {
+      top: 196px;
+      left: 33px;
+    }
+
+    input,
+    button[type="submit"] {
+      width: 288px;
+    }
+  }
 }

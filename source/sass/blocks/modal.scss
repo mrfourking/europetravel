@@ -9,12 +9,11 @@
   left: 50%;
   margin-left: -364px;
 
-  &--active {
+  &--open {
     display: flex;
   }
 
   &--success {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 728px;
@@ -44,4 +43,21 @@
   font-weight: 500;
   color: $form-text-color;
   text-align: center;
+}
+
+@media (max-width: $mobile-width) {
+  .modal {
+    top: 0;
+    margin-top: 0;
+    margin-left: -160px;
+
+    img {
+      display: none;
+    }
+
+    &--success {
+      width: 100%;
+      padding: 16px;
+    }
+  }
 }

@@ -367,6 +367,20 @@ a {
   text-decoration: none;
   color: inherit; }
 
+.scroll-hidden {
+  overflow: hidden; }
+
+.scroll-hidden .modal-wrap {
+  z-index: 50;
+  overflow: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: block;
+  background: rgba(0, 0, 0, 0.5); }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1360,14 +1374,11 @@ a {
   margin-top: -222px;
   left: 50%;
   margin-left: -364px; }
-  .modal--active {
+  .modal--open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
   .modal--success {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1395,6 +1406,17 @@ a {
   color: #48494d;
   text-align: center; }
 
+@media (max-width: 767px) {
+  .modal {
+    top: 0;
+    margin-top: 0;
+    margin-left: -160px; }
+    .modal img {
+      display: none; }
+    .modal--success {
+      width: 100%;
+      padding: 16px; } }
+
 .form {
   position: relative;
   display: -webkit-box;
@@ -1409,6 +1431,11 @@ a {
           align-items: center;
   padding: 72px 61px 89px 59px;
   background-color: #fbf8f8; }
+  .form span {
+    position: absolute;
+    top: 166px;
+    left: 73px;
+    color: #fe7865; }
   .form form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1426,7 +1453,8 @@ a {
     padding: 15px;
     font-size: 14px;
     line-height: 17px;
-    color: #48494d; }
+    color: #48494d;
+    border: 1px solid rgba(44, 46, 63, 0.3); }
     .form input::-webkit-input-placeholder {
       color: inherit; }
     .form input::-moz-placeholder {
@@ -1437,6 +1465,10 @@ a {
       color: inherit; }
     .form input::placeholder {
       color: inherit; }
+    .form input:invalid {
+      border-color: #fe7865; }
+  .form input[type="tel"] {
+    padding-left: 26px; }
   .form label {
     position: absolute;
     width: 1px;
@@ -1458,15 +1490,6 @@ a {
     background-color: #fe7865;
     border: none; }
 
-.form__button-close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: none; }
-
 .form__title {
   margin: 0;
   margin-bottom: 50px;
@@ -1474,5 +1497,15 @@ a {
   line-height: 43px;
   font-weight: 600;
   color: #48494d; }
+
+@media (max-width: 767px) {
+  .form {
+    padding: 100px 16px 188px; }
+    .form span {
+      top: 196px;
+      left: 33px; }
+    .form input,
+    .form button[type="submit"] {
+      width: 288px; } }
 
 /*# sourceMappingURL=style.css.map */

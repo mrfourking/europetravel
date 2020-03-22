@@ -179,7 +179,7 @@
               породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в
               монастырях Метеоры.
             </p>
-            <a class="country__button">купить тур сейчас</a>
+            <a class="country__button button--modal">купить тур сейчас</a>
           </div>
           <div class="country__image-wrap">
             <picture>
@@ -213,7 +213,7 @@
               песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого
               состояния.
             </p>
-            <a class="country__button">купить тур сейчас</a>
+            <a class="country__button button--modal">купить тур сейчас</a>
           </div>
           <div class="country__image-wrap">
             <picture>
@@ -246,7 +246,7 @@
               местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен
               где находится археологический памятник Кокино в длину около 100 метров.
             </p>
-            <a class="country__button">купить тур сейчас</a>
+            <a class="country__button button--modal">купить тур сейчас</a>
           </div>
           <div class="country__image-wrap">
             <picture>
@@ -278,7 +278,7 @@
               Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой
               берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
             </p>
-            <a class="country__button">купить тур сейчас</a>
+            <a class="country__button button--modal">купить тур сейчас</a>
           </div>
           <div class="country__image-wrap">
             <picture>
@@ -310,7 +310,7 @@
               метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —
               сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет.
             </p>
-            <a class="country__button">купить тур сейчас</a>
+            <a class="country__button button--modal">купить тур сейчас</a>
           </div>
           <div class="country__image-wrap">
             <picture>
@@ -431,37 +431,40 @@
     </div>
   </footer>
 
-  <section class="modal">
-    <img src="img/modal-form.jpg" srcset="img/modal-form@2x.jpg 2x" width="338" height="444" alt="Тур по Европе">
-    <div class="modal__wrap form">
-      <button class="form__button-close">
+  <div class="modal-wrap">
+    <section class="modal">
+      <img src=" img/modal-form.jpg" srcset="img/modal-form@2x.jpg 2x" width="338" height="444" alt="Тур по Европе">
+      <div class="modal__wrap form">
+        <h2 class="form__title">Купить тур</h2>
+        <span>*</span>
+        <form method="POST" action="https://echo.htmlacademy.ru">
+          <input type="tel" name="phone" id="phone-modal" placeholder="+7 Введите 10 цифр номера" maxlength="16" required>
+          <label for="phone-modal">Номер телефона</label>
+          <input type="email" name="mail" id="mail-modal" placeholder="E-mail">
+          <label for="mail-modal">Адрес эл. почты</label>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+      <button class="modal__button-close">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round"
             stroke-linejoin="round" />
         </svg>
         <span class="visually-hidden">Закрыть окно</span>
       </button>
-      <h2 class="form__title">Купить тур</h2>
-      <form method="POST" action="https://echo.htmlacademy.ru">
-        <input type="tel" name="phone" id="phone-modal" placeholder="+7 Введите 10 цифр номера" required>
-        <label for="phone-modal">Номер телефона</label>
-        <input type="email" name="mail" id="mail-modal" placeholder="E-mail">
-        <label for="mail-modal">Адрес эл. почты</label>
-        <button type="submit">Отправить</button>
-      </form>
-    </div>
-  </section>
+    </section>
 
-  <section class="modal modal--success modal--active">
-    <button class="modal__button-close">
-      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round"
-          stroke-linejoin="round" />
-      </svg>
-      <span class="visually-hidden">Закрыть окно</span>
-    </button>
-    <h2 class="modal__title">Форма успешно отправлена, спасибо! :)</h2>
-  </section>
+    <section class="modal modal--success">
+      <button class="modal__button-close">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+      <h2 class="modal__title">Форма успешно отправлена, спасибо! :)</h2>
+    </section>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
