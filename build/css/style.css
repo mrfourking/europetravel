@@ -1386,6 +1386,16 @@ a {
     margin: 0;
     margin-bottom: 23px; } }
 
+.countries-wrap {
+  background-color: #ffffff;
+  background-image: url("../img/countries-bg-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 142px; }
+
+@media (max-width: 1023px) {
+  .countries-wrap {
+    background-image: none; } }
+
 .price-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1401,7 +1411,8 @@ a {
   padding: 42px 30px 30px;
   color: #2c2e3f;
   border: 1px solid rgba(44, 46, 63, 0.3);
-  border-radius: 6px; }
+  border-radius: 6px;
+  background-color: #ffffff; }
   .price-card:hover {
     border-color: #fe7865;
     -webkit-box-shadow: 0 0 0 2px #fe7865;

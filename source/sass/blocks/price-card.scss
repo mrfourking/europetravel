@@ -10,6 +10,8 @@
   border: 1px solid $carousel-text-color;
   border-radius: 6px;
 
+  background-color: $body-bg-color;
+
   &:hover {
     border-color: $accent-color;
     box-shadow: 0 0 0 2px $accent-color;

@@ -1,0 +1,13 @@
+.countries-wrap {
+  background-color: $body-bg-color;
+
+  background-image: url("../img/countries-bg-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 142px;
+}
+
+@media (max-width: $tablet-width) {
+  .countries-wrap {
+    background-image: none;
+  }
+}
