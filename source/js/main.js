@@ -14,6 +14,7 @@
   headerButton.addEventListener('click', function () {
     headerButton.classList.toggle('header__menu-button--open');
     headerMenu.classList.toggle('header__menu--open');
+    document.body.classList.toggle('scroll-hidden');
     headerButtonIcons.forEach(function (item) {
       item.classList.toggle('header__icon--active');
     });
@@ -139,7 +140,7 @@
     closeButton = item.querySelector('.modal__button-close');
 
     item.classList.add('modal--open');
-    document.body.classList.add('scroll-hidden');
+    document.body.classList.add('scroll-hidden--modal');
 
     document.addEventListener('keydown', onModalKeydown(item));
     document.addEventListener('click', onRandomAreaClick(item));
@@ -148,7 +149,7 @@
 
   var closeModal = function (item) {
     item.classList.remove('modal--open');
-    document.body.classList.remove('scroll-hidden');
+    document.body.classList.remove('scroll-hidden--modal');
 
     document.removeEventListener('keydown', onModalKeydown(item));
     document.removeEventListener('click', onRandomAreaClick(item));
@@ -203,6 +204,9 @@
   });
 })();
 
+/**
+ * Модуль с маской и валидацией телефона
+ */
 (function () {
   var START_SYMBOLS = '+7(';
   var CLOSE_SYMBOL = ')';

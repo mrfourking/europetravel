@@ -36,9 +36,13 @@ a {
 
 .scroll-hidden {
   overflow: hidden;
+
+  &--modal {
+    overflow: hidden;
+  }
 }
 
-.scroll-hidden .modal-wrap {
+.scroll-hidden--modal .modal-wrap {
   z-index: 50;
   overflow: auto;
 
