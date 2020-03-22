@@ -1,0 +1,47 @@
+.modal {
+  z-index: 100;
+  position: fixed;
+
+  display: none;
+
+  top: 50vh;
+  margin-top: -222px;
+  left: 50%;
+  margin-left: -364px;
+
+  &--active {
+    display: flex;
+  }
+
+  &--success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 728px;
+    height: 444px;
+
+    background-color: $modal-bg-color;
+  }
+}
+
+.modal__button-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+}
+
+.modal__title {
+  width: 400px;
+
+  font-size: 25px;
+  line-height: 43px;
+  font-weight: 500;
+  color: $form-text-color;
+  text-align: center;
+}

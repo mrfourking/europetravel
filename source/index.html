@@ -431,6 +431,38 @@
     </div>
   </footer>
 
+  <section class="modal">
+    <img src="img/modal-form.jpg" srcset="img/modal-form@2x.jpg 2x" width="338" height="444" alt="Тур по Европе">
+    <div class="modal__wrap form">
+      <button class="form__button-close">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+      <h2 class="form__title">Купить тур</h2>
+      <form method="POST" action="https://echo.htmlacademy.ru">
+        <input type="tel" name="phone" id="phone-modal" placeholder="+7 Введите 10 цифр номера" required>
+        <label for="phone-modal">Номер телефона</label>
+        <input type="email" name="mail" id="mail-modal" placeholder="E-mail">
+        <label for="mail-modal">Адрес эл. почты</label>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="modal modal--success modal--active">
+    <button class="modal__button-close">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+    <h2 class="modal__title">Форма успешно отправлена, спасибо! :)</h2>
+  </section>
+
   <script src="js/main.js"></script>
 </body>
 

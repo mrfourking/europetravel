@@ -1,0 +1,79 @@
+.form {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 72px 61px 89px 59px;
+
+  background-color: $modal-bg-color;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 270px;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    font-size: 14px;
+    line-height: 17px;
+    color: $form-text-color;
+
+    &::placeholder {
+      color: inherit;
+    }
+  }
+
+  label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  button[type="submit"] {
+    width: 176px;
+    padding: 18px 40px;
+
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $main-text-color;
+
+    background-color: $accent-color;
+
+    border: none;
+  }
+}
+
+.form__button-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+}
+
+.form__title {
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-size: 25px;
+  line-height: 43px;
+  font-weight: 600;
+  color: $form-text-color;
+}

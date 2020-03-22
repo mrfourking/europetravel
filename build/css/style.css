@@ -1352,4 +1352,127 @@ a {
             align-items: center;
     width: 100%; } }
 
+.modal {
+  z-index: 100;
+  position: fixed;
+  display: none;
+  top: 50vh;
+  margin-top: -222px;
+  left: 50%;
+  margin-left: -364px; }
+  .modal--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .modal--success {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 728px;
+    height: 444px;
+    background-color: #fbf8f8; }
+
+.modal__button-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none; }
+
+.modal__title {
+  width: 400px;
+  font-size: 25px;
+  line-height: 43px;
+  font-weight: 500;
+  color: #48494d;
+  text-align: center; }
+
+.form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 72px 61px 89px 59px;
+  background-color: #fbf8f8; }
+  .form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .form input {
+    width: 270px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #48494d; }
+    .form input::-webkit-input-placeholder {
+      color: inherit; }
+    .form input::-moz-placeholder {
+      color: inherit; }
+    .form input:-ms-input-placeholder {
+      color: inherit; }
+    .form input::-ms-input-placeholder {
+      color: inherit; }
+    .form input::placeholder {
+      color: inherit; }
+  .form label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden; }
+  .form button[type="submit"] {
+    width: 176px;
+    padding: 18px 40px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #fe7865;
+    border: none; }
+
+.form__button-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none; }
+
+.form__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 25px;
+  line-height: 43px;
+  font-weight: 600;
+  color: #48494d; }
+
 /*# sourceMappingURL=style.css.map */
