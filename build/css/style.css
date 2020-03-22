@@ -990,6 +990,7 @@ a {
     margin-top: -365px; } }
 
 .countries {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1048,15 +1049,19 @@ a {
     width: 100%;
     padding: 0; }
   .countries__carousel {
+    position: absolute;
     margin-left: 37px;
     margin-bottom: 33px; }
   .countries__list {
-    width: 100%; } }
+    width: 100%;
+    padding-top: 72px; } }
 
 @media (max-width: 767px) {
   .countries__carousel {
     margin-left: 16px;
-    margin-bottom: 23px; } }
+    margin-bottom: 23px; }
+  .countries__list {
+    padding-top: 62px; } }
 
 .feedback {
   display: -webkit-box;
