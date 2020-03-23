@@ -4,28 +4,57 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 72px 61px 89px 59px;
+  width: 656px;
+  padding: 50px;
 
-  background-color: $modal-bg-color;
+  background-color: $body-bg-color;
+
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1);
+
+  p {
+    margin: 0;
+    margin-bottom: 21px;
+  }
+
+  &--modal {
+    width: auto;
+    margin: 0;
+    padding: 72px 61px 89px 59px;
+
+    background-color: $modal-bg-color;
+
+    border-radius: 0;
+  }
 
 
   span {
     position: absolute;
-    top: 166px;
-    left: 73px;
+    top: 144px;
+    left: 65px;
 
     color: $accent-color;
   }
 
+  &--modal span {
+    top: 166px;
+    left: 73px;
+  }
+
   form {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &--modal form {
     flex-direction: column;
     align-items: center;
   }
 
   input {
-    width: 270px;
-    margin-bottom: 20px;
+    width: 269px;
+    margin-bottom: 25px;
     padding: 15px;
 
     font-size: 14px;
@@ -41,6 +70,10 @@
     &:invalid {
       border-color: $accent-color;
     }
+  }
+
+  &--modal input {
+    margin-bottom: 20px;
   }
 
   input[type="tel"] {
@@ -60,6 +93,7 @@
 
   button[type="submit"] {
     width: 176px;
+    margin: 0 auto;
     padding: 18px 40px;
 
     font-size: 12px;
@@ -77,26 +111,94 @@
 
 .form__title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 
   font-size: 25px;
-  line-height: 43px;
+  line-height: 32px;
   font-weight: 600;
   color: $form-text-color;
+
+  &--modal {
+    margin-bottom: 50px;
+
+    line-height: 43px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .form {
+    p {
+      margin-bottom: 22px;
+    }
+
+    input {
+      margin-bottom: 21px;
+    }
+
+    button[type="submit"] {
+      width: 250px;
+      padding: 20px 84px 19px;
+
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
 }
 
 @media (max-width: $mobile-width) {
   .form {
-    padding: 100px 16px 188px;
+    width: 320px;
+    margin: 0 auto;
+    padding: 50px 16px;
+
+    text-align: center;
+
+    background-color: $modal-bg-color;
+
+    border-radius: 0;
+
+    box-shadow: none;
+
+    p {
+      margin-bottom: 20px;
+
+      line-height: 24px;
+    }
 
     span {
-      top: 196px;
+      top: 204px;
+      left: 31px;
+    }
+
+    form {
+      flex-direction: column;
+    }
+
+    input {
+      width: 288px;
+    }
+
+    button[type="submit"] {
+      width: 288px;
+      padding: 19px 84px;
+    }
+
+    &--modal {
+      padding: 100px 16px 188px;
+    }
+
+    &--modal span {
+      top: 165px;
       left: 33px;
     }
 
-    input,
-    button[type="submit"] {
+    &--modal input,
+    &--modal button[type="submit"] {
       width: 288px;
     }
+  }
+
+  .form__title {
+    margin-bottom: 20px;
   }
 }

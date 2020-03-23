@@ -1,0 +1,36 @@
+.callback {
+  width: 1233px;
+  margin: 0 auto;
+  padding: 70px 20px;
+
+  background-image: url("../img/callback-bg-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 45px 0;
+}
+
+.callback__form {
+  margin-left: auto;
+}
+
+@media (max-width: $tablet-width) {
+  .callback {
+    width: 100%;
+    padding: 71px 20px 73px;
+
+    background-image: url("../img/callback-bg-tablet.jpg");
+    background-position: 0 0;
+    background-size: cover;
+  }
+
+  .callback__form {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .callback {
+    padding: 0;
+
+    background-image: none;
+  }
+}

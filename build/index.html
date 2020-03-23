@@ -406,6 +406,20 @@
         </div>
       </section>
     </div>
+
+    <section class="callback">
+      <div class="callback__form form">
+        <h2 class="form__title">У Вас остались вопросы?</h2>
+        <p>Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+        <span>*</span>
+        <form method="POST" action="https://echo.htmlacademy.ru">
+          <input type="tel" name="phone" id="phone" placeholder="+7  Введите 10 цифр номера" maxlength="16" required="">
+          <label for="phone-modal">Номер телефона</label>
+          <input type="email" name="mail" id="mail" placeholder="E-mail">
+          <label for="mail-modal">Адрес эл. почты</label>
+          <button type="submit">Отправить</button>
+        </form>
+    </div></section>
   </main>
 
   <footer class="footer">
@@ -499,11 +513,11 @@
   <div class="modal-wrap">
     <section class="modal">
       <img src=" img/modal-form.jpg" srcset="img/modal-form@2x.jpg 2x" width="338" height="444" alt="Тур по Европе">
-      <div class="modal__wrap form">
-        <h2 class="form__title">Купить тур</h2>
+      <div class="modal__wrap form form--modal">
+        <h2 class="form__title form__title--modal">Купить тур</h2>
         <span>*</span>
         <form method="POST" action="https://echo.htmlacademy.ru">
-          <input type="tel" name="phone" id="phone-modal" placeholder="+7 Введите 10 цифр номера" maxlength="16" required="">
+          <input type="tel" name="phone" id="phone-modal" placeholder="+7  Введите 10 цифр номера" maxlength="16" required="">
           <label for="phone-modal">Номер телефона</label>
           <input type="email" name="mail" id="mail-modal" placeholder="E-mail">
           <label for="mail-modal">Адрес эл. почты</label>

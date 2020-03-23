@@ -3,7 +3,7 @@
   align-items: flex-start;
   max-width: 1210px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 138px;
 }
 
 .price__list {
@@ -73,6 +73,7 @@
     flex-direction: column-reverse;
     align-items: center;
     padding-top: 78px;
+    padding-bottom: 123px;
   }
 
   .price__wrap {
@@ -128,7 +129,7 @@
 
 @media (max-width: $mobile-width) {
   .price {
-    padding: 45px 16px 0;
+    padding: 45px 16px 26px;
   }
 
   .price__wrap {
