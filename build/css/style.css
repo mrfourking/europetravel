@@ -424,6 +424,10 @@ a {
   .contacts--footer-mail {
     font-size: inherit;
     line-height: inherit; }
+  .contacts--footer-mail svg {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-right: 15px; }
   .contacts--footer-phone {
     font-size: 16px; }
 
@@ -438,6 +442,11 @@ a {
     text-decoration: underline; }
     .contacts--price svg {
       display: none; }
+    .contacts--footer-mail {
+      font-size: 14px;
+      line-height: 17px; }
+    .contacts--footer-phone {
+      font-size: 16px; }
   .contacts__text--desktop {
     display: none; }
   .contacts__text--tablet {
@@ -1188,16 +1197,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
 .countries-list__item {
   max-width: 95px;
-  margin-right: 23px;
-  margin-bottom: 20px; }
+  margin-right: 50px; }
   .countries-list__item:last-child {
     margin-right: 0; }
 
@@ -1206,16 +1211,17 @@ a {
   padding: 0;
   list-style: none; }
 
-.countries-list__sublist-item a:hover {
-  color: #fe7865;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease; }
-
-.countries-list__sublist-item a:active {
-  color: #f17d4b;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease; }
+.countries-list__sublist-item {
+  margin-bottom: 10px; }
+  .countries-list__sublist-item a:hover {
+    color: #fe7865;
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease; }
+  .countries-list__sublist-item a:active {
+    color: #f17d4b;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease; }
 
 @media (max-width: 1023px) {
   .countries-list {
@@ -1234,7 +1240,12 @@ a {
             justify-content: center; }
   .countries-list__item {
     width: 134px;
-    margin-right: 0; }
+    margin-right: 20px;
+    margin-bottom: 20px; }
+    .countries-list__item:nth-child(2n) {
+      margin-right: 0; }
+    .countries-list__item:last-child {
+      margin: 0 auto; }
   .countries-list__sublist {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1561,12 +1572,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding: 170px 20% 75px 20.2%;
+  width: 1190px;
+  margin: 0 auto;
+  padding: 169px 20px 75px 23px;
   font-size: 14px;
   line-height: 17px; }
 
@@ -1579,17 +1592,6 @@ a {
   color: #2c2e3f; }
 
 .footer__next-travels {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  width: 30%;
-  margin-right: auto;
-  padding-right: 2.5%;
-  border-right: 1px solid #d7d9df; }
-
-.footer__contacts {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1597,41 +1599,57 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 390px;
-  margin-right: 4.4%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 389px;
+  margin-right: auto;
+  border-right: 1px solid #d7d9df; }
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 301px;
+  margin-left: 3.8%;
   padding-right: 33px;
-  padding-left: 7.9%;
   border-right: 1px solid #d7d9df; }
 
 .footer__mail {
-  margin-bottom: 18px; }
+  margin-bottom: 17px; }
 
 .footer__corporative {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 30%; }
+  max-width: 320px;
+  margin-left: auto; }
 
 .footer__offer {
+  margin: 0;
   line-height: 24px; }
 
 @media (max-width: 1023px) {
   .footer {
+    width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 80px 21px 50px; }
+  .footer__title {
+    margin-bottom: 21px; }
   .footer__next-travels {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    width: 396px;
-    margin-bottom: 30px;
-    padding-right: 50px; }
+    max-width: 396px;
+    margin-bottom: 21px; }
   .footer__contacts {
     width: auto;
-    margin: 0;
-    margin-right: auto;
-    margin-bottom: 30px;
+    margin: 0 auto 30px -24px;
     padding: 0;
     border: none; }
   .footer__corporative {
@@ -1646,6 +1664,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    max-width: none;
     padding-top: 30px;
     text-align: center;
     border-top: 1px solid #d7d9df; } }
@@ -1656,7 +1675,12 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 70px 12px 35px; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    padding: 70px 0 35px;
+    text-align: center; }
   .footer__next-travels {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1668,24 +1692,19 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
-    margin: 0;
-    margin-bottom: 30px;
+    margin: 0 20px 30px 12px;
     padding: 0;
+    padding-bottom: 20px;
     border: none;
     border-bottom: 1px solid #d7d9df; }
   .footer__contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%; } }
+    margin: 0 20px 14px 12px; }
+  .footer__corporative {
+    width: auto;
+    margin: 0 13px 35px 19px; } }
 
 .modal {
   z-index: 100;
