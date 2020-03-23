@@ -28,10 +28,10 @@
     background-size: cover;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-    background-image: url("../img/callback-bg-tablet@2x.jpg");
-    background-size: 768px auto;
-  }
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/callback-bg-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   .callback__form {

@@ -64,10 +64,10 @@
     background-size: 116.7% auto;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-    background-image: url("../img/start-bg-tablet@2x.jpg");
-    background-size: 1023px auto;
-  }
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/start-bg-tablet@2x.jpg");
+      background-size: 1023px auto;
+    }
   }
 
   .main__title {
@@ -120,10 +120,10 @@
     background-size: 119% auto;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-    background-image: url("../img/start-bg-mobile@2x.jpg");
-    background-size: 767px auto;
-  }
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/start-bg-mobile@2x.jpg");
+      background-size: 767px auto;
+    }
   }
 
   .main__intro {
