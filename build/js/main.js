@@ -106,7 +106,7 @@
 })();
 
 /**
- * Модуль для работы модального окна
+ * Модуль для работы модального окна и формы
  */
 (function () {
   var ESC_KEYCODE = 27;
@@ -117,6 +117,8 @@
   var closeButton;
   var userPhone = modal.querySelector('#phone-modal');
   var userMail = modal.querySelector('#mail-modal');
+
+  var form = document.querySelector('.callback__form form');
 
   var isStorageSupport = true;
   var storagePhone = '';
@@ -196,10 +198,16 @@
       }
     });
   });
+
   modal.addEventListener('submit', function (evt) {
     evt.preventDefault();
     saveToLocalStorage();
     closeModal(modal);
+    openModal(modalSuccess);
+  });
+
+  form.addEventListener('submit', function (evt) {
+    evt.preventDefault();
     openModal(modalSuccess);
   });
 })();
