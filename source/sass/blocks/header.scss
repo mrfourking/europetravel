@@ -85,17 +85,19 @@
   }
 
   .header__menu-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 0;
     margin-bottom: 30px;
-    padding: 15px 16px 17px;
 
     background-color: $menu-item-bg-color;
   }
 
   .header__menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 16px 17px;
+
     font-size: 20px;
     line-height: 28px;
     font-weight: 600;

@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы">
+  <meta name="keyword" content="Путешествие, Европа, Греция, Албания, Македония, Черногория, Хорватия">
   <title>Путешествие в Европу</title>
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
@@ -18,20 +20,24 @@
     </a>
     <ul class="header__menu header__menu--nojs">
       <li class="header__menu-item">
-        <a class="header__menu-link" href="#">О путешествии</a>
-        <svg class="header__menu-icon" width="8" height="12" viewBox="0 0 8 12" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z" fill="#2C2E3F"
-            fill-opacity="0.5" />
-        </svg>
+        <a class="header__menu-link" href="#places">
+          <span>О путешествии</span>
+          <svg class="header__menu-icon" width="8" height="12" viewBox="0 0 8 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z"
+              fill="#2C2E3F" fill-opacity="0.5" />
+          </svg>
+        </a>
       </li>
       <li class="header__menu-item">
-        <a class="header__menu-link" href="#">Цены</a>
-        <svg class="header__menu-icon" width="8" height="12" viewBox="0 0 8 12" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z" fill="#2C2E3F"
-            fill-opacity="0.5" />
-        </svg>
+        <a class="header__menu-link" href="#price">
+          <span>Цены</span>
+          <svg class="header__menu-icon" width="8" height="12" viewBox="0 0 8 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z"
+              fill="#2C2E3F" fill-opacity="0.5" />
+          </svg>
+        </a>
       </li>
     </ul>
     <a class="header__phone contacts" href="tel:+749978468446">
@@ -42,7 +48,7 @@
       </svg>
       <span>+7 (499) -784-684-46</span>
     </a>
-    <button class="header__menu-button header__menu-button--nojs">
+    <button class="header__menu-button header__menu-button--nojs" type="button">
       <svg class="header__icon header__icon--active" width="23" height="14" viewBox="0 0 23 14" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -64,7 +70,7 @@
         В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
         потрясающая красота природы.
       </p>
-      <a class="main__button">
+      <a class="main__button button" href="#countries">
         <span>смотреть тур</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M8 1V15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -73,7 +79,7 @@
 
       </a>
     </section>
-    <section class="places">
+    <section class="places" id="places">
       <div class="places__wrap">
         <h2 class="places__title">Места посещения</h2>
         <p class="places__intro">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
@@ -82,12 +88,19 @@
         <li class="places__item">
           <div class="place-card">
             <picture>
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/greece-tablet.webp 1x, img/greece-tablet@2x.webp 2x">
+              <!--Не ретина : 705 х 515; Ретина: 1410 х 1030 -->
+              <source type="image/webp" srcset="img/greece-desktop.webp 1x, img/greece-desktop@2x.webp 2x">
+              <!--Не ретина : 350 х 430; Ретина: 700 х 830 -->
               <source media="(max-width: 1023px)" srcset="img/greece-tablet.jpg 1x, img/greece-tablet@2x.jpg 2x">
+              <!--Не ретина : 288 х 425; Ретина: 576 х 850 -->
               <img src="img/greece-desktop.jpg" srcset="img/greece-desktop@2x.jpg 2x" width="350" height="430"
                 alt="Греция">
+              <!--Не ретина : 350 х 430; Ретина: 700 х 830 -->
             </picture>
             <h3 class="place-card__title">Греция</h3>
-            <a class="place-card__hover-wrap" href="#">
+            <a class="place-card__hover-wrap" href="#countries">
               <span class="place-card__button">Смотреть подробнее</span>
             </a>
           </div>
@@ -95,12 +108,19 @@
         <li class="places__item">
           <div class="place-card">
             <picture>
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/albany-tablet.webp 1x, img/albany-tablet@2x.webp 2x">
+              <!--Не ретина : 705 х 515; Ретина: 1410 х 1030 -->
+              <source type="image/webp" srcset="img/albany-desktop.webp 1x, img/albany-desktop@2x.webp 2x">
+              <!--Не ретина : 350 х 430; Ретина: 700 х 830 -->
               <source media="(max-width: 1023px)" srcset="img/albany-tablet.jpg 1x, img/albany-tablet@2x.jpg 2x">
+              <!--Не ретина : 288 х 425; Ретина: 576 х 850 -->
               <img src="img/albany-desktop.jpg" srcset="img/albany-desktop@2x.jpg 2x" width="350" height="430"
                 alt="Албания">
+              <!--Не ретина : 350 х 430; Ретина: 700 х 830 -->
             </picture>
             <h3 class="place-card__title">Албания</h3>
-            <a class="place-card__hover-wrap" href="#">
+            <a class="place-card__hover-wrap" href="#countries">
               <span class="place-card__button">Смотреть подробнее</span>
             </a>
           </div>
@@ -108,12 +128,19 @@
         <li class="places__item">
           <div class="place-card">
             <picture>
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/macedonia-tablet.webp 1x, img/macedonia-tablet@2x.webp 2x">
+              <!--Не ретина : 705 х 515; Ретина: 1410 х 1030 -->
+              <source type="image/webp" srcset="img/macedonia-desktop.webp 1x, img/macedonia-desktop@2x.webp 2x">
+              <!--Не ретина : 350 х 430; Ретина: 700 х 830 -->
               <source media="(max-width: 1023px)" srcset="img/macedonia-tablet.jpg 1x, img/macedonia-tablet@2x.jpg 2x">
+              <!--Не ретина : 288 х 425; Ретина: 576 х 850 -->
               <img src="img/macedonia-desktop.jpg" srcset="img/macedonia-desktop@2x.jpg 2x" width="350" height="430"
                 alt="Македония">
+              <!--Не ретина : 350 х 430; Ретина: 700 х 830 -->
             </picture>
             <h3 class="place-card__title">Македония</h3>
-            <a class="place-card__hover-wrap" href="#">
+            <a class="place-card__hover-wrap" href="#countries">
               <span class="place-card__button">Смотреть подробнее</span>
             </a>
           </div>
@@ -121,13 +148,20 @@
         <li class="places__item">
           <div class="place-card">
             <picture>
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/montenegro-tablet.webp 1x, img/montenegro-tablet@2x.webp 2x">
+              <!--Не ретина : 705 х 515; Ретина: 1410 х 1030 -->
+              <source type="image/webp" srcset="img/montenegro-desktop.webp 1x, img/montenegro-desktop@2x.webp 2x">
+              <!--Не ретина : 350 х 430; Ретина: 700 х 830 -->
               <source media="(max-width: 1023px)"
                 srcset="img/montenegro-tablet.jpg 1x, img/montenegro-tablet@2x.jpg 2x">
+              <!--Не ретина : 288 х 425; Ретина: 576 х 850 -->
               <img src="img/montenegro-desktop.jpg" srcset="img/montenegro-desktop@2x.jpg 2x" width="350" height="430"
                 alt="Черногория">
+              <!--Не ретина : 350 х 430; Ретина: 700 х 830 -->
             </picture>
             <h3 class="place-card__title">Черногория</h3>
-            <a class="place-card__hover-wrap" href="#">
+            <a class="place-card__hover-wrap" href="#countries">
               <span class="place-card__button">Смотреть подробнее</span>
             </a>
           </div>
@@ -135,13 +169,19 @@
         <li class="places__item">
           <div class="place-card">
             <picture>
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/croatia-tablet.webp 1x, img/croatia-tablet@2x.webp 2x">
+              <!--Не ретина : 705 х 515; Ретина: 1410 х 1030 -->
+              <source type="image/webp" srcset="img/croatia-desktop.webp 1x, img/croatia-desktop@2x.webp 2x">
+              <!--Не ретина : 350 х 430; Ретина: 700 х 830 -->
               <source media="(max-width: 1023px)" srcset="img/croatia-tablet.jpg 1x, img/croatia-tablet@2x.jpg 2x">
+              <!--Не ретина : 288 х 425; Ретина: 576 х 850 -->
               <img src="img/croatia-desktop.jpg" srcset="img/croatia-desktop@2x.jpg 2x" width="350" height="430"
                 alt="Хорватия">
+              <!--Не ретина : 350 х 430; Ретина: 700 х 830 -->
             </picture>
-
             <h3 class="place-card__title">Хорватия</h3>
-            <a class="place-card__hover-wrap" href="#">
+            <a class="place-card__hover-wrap" href="#countries">
               <span class="place-card__button">Смотреть подробнее</span>
             </a>
           </div>
@@ -150,7 +190,7 @@
     </section>
     <div class="countries-wrap">
 
-      <section class="countries">
+      <section class="countries" id="countries">
         <h2 class="countries__title visually-hidden">Описание стран</h2>
         <ul class="countries__carousel">
           <li class="countries__carousel-item countries__carousel-item--active">
@@ -187,12 +227,23 @@
             </div>
             <div class="country__image-wrap">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/greece-desc-mobile.webp 1x, img/greece-desc-mobile@2x.webp 2x">
+                <!--Не ретина : 320 х 415; Ретина: 640 х 830 -->
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/greece-desc-tablet.webp 1x, img/greece-desc-tablet@2x.webp 2x">
+                <!--Не ретина : 768 х 415; Ретина: 1536 х 830 -->
+                <source type="image/webp" srcset="img/greece-desc-desktop.webp 1x, img/greece-desc-desktop@2x.webp 2x">
+                <!--Не ретина : 430 х 596; Ретина: 860 х 1192 -->
                 <source media="(max-width: 767px)"
                   srcset="img/greece-desc-mobile.jpg 1x, img/greece-desc-mobile@2x.jpg 2x">
+                <!--Не ретина : 320 х 415; Ретина: 640 х 830 -->
                 <source media="(max-width: 1023px)"
                   srcset="img/greece-desc-tablet.jpg 1x, img/greece-desc-tablet@2x.jpg 2x">
+                <!--Не ретина : 768 х 415; Ретина: 1536 х 830 -->
                 <img src="img/greece-desc-desktop.jpg" srcset="img/greece-desc-desktop@2x.jpg 2x" width="430"
                   height="596" alt="Греция">
+                <!--Не ретина : 430 х 596; Ретина: 860 х 1192 -->
               </picture>
             </div>
             <div class="country__feedback feedback">
@@ -202,8 +253,13 @@
                 потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!
               </p>
               <div class="feedback__author">
-                <img src="img/feedback-avatar-1.jpg" srcset="img/feedback-avatar-1@2x.jpg 2x" width="38" height="38"
-                  alt="Влада Голицина">
+                <picture>
+                  <source type="image/webp" srcset="img/feedback-avatar-1.webp 1x, img/feedback-avatar-1@2x.webp 2x">
+                  <!--Не ретина : 38 х 38; Ретина: 76 х 76 -->
+                  <img src="img/feedback-avatar-1.jpg" srcset="img/feedback-avatar-1@2x.jpg 2x" width="38" height="38"
+                    alt="Влада Голицина">
+                  <!--Не ретина : 38 х 38; Ретина: 76 х 76 -->
+                </picture>
                 <span class="feedback__name">Влада Голицина</span>
               </div>
             </div>
@@ -220,14 +276,25 @@
               <a class="country__button button button--modal">купить тур сейчас</a>
             </div>
             <div class="country__image-wrap">
-              <picture>
+              <<picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/albany-desc-mobile.webp 1x, img/albany-desc-mobile@2x.webp 2x">
+                <!--Не ретина : 320 х 415; Ретина: 640 х 830 -->
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/albany-desc-tablet.webp 1x, img/albany-desc-tablet@2x.webp 2x">
+                <!--Не ретина : 768 х 415; Ретина: 1536 х 830 -->
+                <source type="image/webp" srcset="img/albany-desc-desktop.webp 1x, img/albany-desc-desktop@2x.webp 2x">
+                <!--Не ретина : 430 х 596; Ретина: 860 х 1192 -->
                 <source media="(max-width: 767px)"
                   srcset="img/albany-desc-mobile.jpg 1x, img/albany-desc-mobile@2x.jpg 2x">
+                <!--Не ретина : 320 х 415; Ретина: 640 х 830 -->
                 <source media="(max-width: 1023px)"
                   srcset="img/albany-desc-tablet.jpg 1x, img/albany-desc-tablet@2x.jpg 2x">
+                <!--Не ретина : 768 х 415; Ретина: 1536 х 830 -->
                 <img src="img/albany-desc-desktop.jpg" srcset="img/albany-desc-desktop@2x.jpg 2x" width="430"
                   height="596" alt="Албания">
-              </picture>
+                <!--Не ретина : 430 х 596; Ретина: 860 х 1192 -->
+                </picture>
             </div>
             <div class="country__feedback feedback">
               <h4 class="feedback__title">Отзывы</h4>
@@ -237,8 +304,13 @@
                 вкусить все красоты природы :)
               </p>
               <div class="feedback__author">
-                <img src="img/feedback-avatar-2.jpg" srcset="img/feedback-avatar-2@2x.jpg 2x" width="38" height="38"
-                  alt="Маришка">
+                <picture>
+                  <source type="image/webp" srcset="img/feedback-avatar-2.webp 1x, img/feedback-avatar-2@2x.webp 2x">
+                  <!--Не ретина : 38 х 38; Ретина: 76 х 76 -->
+                  <img src="img/feedback-avatar-2.jpg" srcset="img/feedback-avatar-2@2x.jpg 2x" width="38" height="38"
+                    alt="Маришка">
+                  <!--Не ретина : 38 х 38; Ретина: 76 х 76 -->
+                </picture>
                 <span class="feedback__name">Маришка</span>
               </div>
             </div>
@@ -256,12 +328,24 @@
             </div>
             <div class="country__image-wrap">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/macedonia-desc-mobile.webp 1x, img/macedonia-desc-mobile@2x.webp 2x">
+                <!--Не ретина : 320 х 415; Ретина: 640 х 830 -->
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/macedonia-desc-tablet.webp 1x, img/macedonia-desc-tablet@2x.webp 2x">
+                <!--Не ретина : 768 х 415; Ретина: 1536 х 830 -->
+                <source type="image/webp"
+                  srcset="img/macedonia-desc-desktop.webp 1x, img/macedonia-desc-desktop@2x.webp 2x">
+                <!--Не ретина : 430 х 596; Ретина: 860 х 1192 -->
                 <source media="(max-width: 767px)"
                   srcset="img/macedonia-desc-mobile.jpg 1x, img/macedonia-desc-mobile@2x.jpg 2x">
+                <!--Не ретина : 320 х 415; Ретина: 640 х 830 -->
                 <source media="(max-width: 1023px)"
                   srcset="img/macedonia-desc-tablet.jpg 1x, img/macedonia-desc-tablet@2x.jpg 2x">
+                <!--Не ретина : 768 х 415; Ретина: 1536 х 830 -->
                 <img src="img/macedonia-desc-desktop.jpg" srcset="img/macedonia-desc-desktop@2x.jpg 2x" width="430"
                   height="596" alt="Македония">
+                <!--Не ретина : 430 х 596; Ретина: 860 х 1192 -->
               </picture>
             </div>
             <div class="country__feedback feedback">
@@ -272,8 +356,13 @@
                 как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.
               </p>
               <div class="feedback__author">
-                <img src="img/feedback-avatar-3.jpg" srcset="img/feedback-avatar-3@2x.jpg 2x" width="38" height="38"
-                  alt="Михаил Кузьмин">
+                <picture>
+                  <source type="image/webp" srcset="img/feedback-avatar-3.webp 1x, img/feedback-avatar-3@2x.webp 2x">
+                  <!--Не ретина : 38 х 38; Ретина: 76 х 76 -->
+                  <img src="img/feedback-avatar-3.jpg" srcset="img/feedback-avatar-3@2x.jpg 2x" width="38" height="38"
+                    alt="Михаил Кузьмин">
+                  <!--Не ретина : 38 х 38; Ретина: 76 х 76 -->
+                </picture>
                 <span class="feedback__name">Михаил Кузьмин</span>
               </div>
             </div>
@@ -289,12 +378,24 @@
             </div>
             <div class="country__image-wrap">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/montenegro-desc-mobile.webp 1x, img/montenegro-desc-mobile@2x.webp 2x">
+                <!--Не ретина : 320 х 415; Ретина: 640 х 830 -->
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/montenegro-desc-tablet.webp 1x, img/montenegro-desc-tablet@2x.webp 2x">
+                <!--Не ретина : 768 х 415; Ретина: 1536 х 830 -->
+                <source type="image/webp"
+                  srcset="img/montenegro-desc-desktop.webp 1x, img/montenegro-desc-desktop@2x.webp 2x">
+                <!--Не ретина : 430 х 596; Ретина: 860 х 1192 -->
                 <source media="(max-width: 767px)"
                   srcset="img/montenegro-desc-mobile.jpg 1x, img/montenegro-desc-mobile@2x.jpg 2x">
+                <!--Не ретина : 320 х 415; Ретина: 640 х 830 -->
                 <source media="(max-width: 1023px)"
                   srcset="img/montenegro-desc-tablet.jpg 1x, img/montenegro-desc-tablet@2x.jpg 2x">
+                <!--Не ретина : 768 х 415; Ретина: 1536 х 830 -->
                 <img src="img/montenegro-desc-desktop.jpg" srcset="img/montenegro-desc-desktop@2x.jpg 2x" width="430"
                   height="596" alt="Черногория">
+                <!--Не ретина : 430 х 596; Ретина: 860 х 1192 -->
               </picture>
             </div>
             <div class="country__feedback feedback">
@@ -303,8 +404,13 @@
                 Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую
               </p>
               <div class="feedback__author">
-                <img src="img/feedback-avatar-4.jpg" srcset="img/feedback-avatar-4@2x.jpg 2x" width="38" height="38"
-                  alt="Анастасия Мей">
+                <picture>
+                  <source type="image/webp" srcset="img/feedback-avatar-4.webp 1x, img/feedback-avatar-4@2x.webp 2x">
+                  <!--Не ретина : 38 х 38; Ретина: 76 х 76 -->
+                  <img src="img/feedback-avatar-4.jpg" srcset="img/feedback-avatar-4@2x.jpg 2x" width="38" height="38"
+                    alt="Анастасия Мей">
+                  <!--Не ретина : 38 х 38; Ретина: 76 х 76 -->
+                </picture>
                 <span class="feedback__name">Анастасия Мей</span>
               </div>
             </div>
@@ -321,12 +427,24 @@
             </div>
             <div class="country__image-wrap">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/croatia-desc-mobile.webp 1x, img/croatia-desc-mobile@2x.webp 2x">
+                <!--Не ретина : 320 х 415; Ретина: 640 х 830 -->
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/croatia-desc-tablet.webp 1x, img/croatia-desc-tablet@2x.webp 2x">
+                <!--Не ретина : 768 х 415; Ретина: 1536 х 830 -->
+                <source type="image/webp"
+                  srcset="img/croatia-desc-desktop.webp 1x, img/croatia-desc-desktop@2x.webp 2x">
+                <!--Не ретина : 430 х 596; Ретина: 860 х 1192 -->
                 <source media="(max-width: 767px)"
                   srcset="img/croatia-desc-mobile.jpg 1x, img/croatia-desc-mobile@2x.jpg 2x">
+                <!--Не ретина : 320 х 415; Ретина: 640 х 830 -->
                 <source media="(max-width: 1023px)"
                   srcset="img/croatia-desc-tablet.jpg 1x, img/croatia-desc-tablet@2x.jpg 2x">
+                <!--Не ретина : 768 х 415; Ретина: 1536 х 830 -->
                 <img src="img/croatia-desc-desktop.jpg" srcset="img/croatia-desc-desktop@2x.jpg 2x" width="430"
                   height="596" alt="Хорватия">
+                <!--Не ретина : 430 х 596; Ретина: 860 х 1192 -->
               </picture>
             </div>
             <div class="country__feedback feedback">
@@ -337,15 +455,20 @@
                 тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)
               </p>
               <div class="feedback__author">
-                <img src="img/feedback-avatar-5.jpg" srcset="img/feedback-avatar-5@2x.jpg 2x" width="38" height="38"
-                  alt="Владимир Мулицин">
+                <picture>
+                  <source type="image/webp" srcset="img/feedback-avatar-5.webp 1x, img/feedback-avatar-5@2x.webp 2x">
+                  <!--Не ретина : 38 х 38; Ретина: 76 х 76 -->
+                  <img src="img/feedback-avatar-5.jpg" srcset="img/feedback-avatar-5@2x.jpg 2x" width="38" height="38"
+                    alt="Владимир Мулицин">
+                  <!--Не ретина : 38 х 38; Ретина: 76 х 76 -->
+                </picture>
                 <span class="feedback__name">Владимир Мулицин</span>
               </div>
             </div>
           </li>
         </ul>
       </section>
-      <section class="price">
+      <section class="price" id="price">
         <ul class="price__list">
           <li class="price__item price-card">
             <h3 class="price-card__title">Комплексный</h3>
@@ -476,6 +599,7 @@
           <label for="mail-modal">Адрес эл. почты</label>
           <button type="submit">Отправить</button>
         </form>
+      </div>
     </section>
   </main>
 
@@ -586,7 +710,7 @@
           <button type="submit">Отправить</button>
         </form>
       </div>
-      <button class="modal__button-close">
+      <button class="modal__button-close" type="button">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round"
             stroke-linejoin="round" />
@@ -596,7 +720,7 @@
     </section>
 
     <section class="modal modal--success">
-      <button class="modal__button-close">
+      <button class="modal__button-close" type="button">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round"
             stroke-linejoin="round" />
@@ -608,6 +732,7 @@
   </div>
 
   <script src="js/main.js"></script>
+  <script src="js/picturefill.min.js"></script>
 </body>
 
 </html>

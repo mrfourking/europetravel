@@ -6,6 +6,12 @@
   background-image: url("../img/callback-bg-desktop.jpg");
   background-repeat: no-repeat;
   background-position: 45px 0;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/callback-bg-desktop@2x.jpg");
+    background-size: 844px auto;
+  }
 }
 
 .callback__form {
@@ -20,6 +26,12 @@
     background-image: url("../img/callback-bg-tablet.jpg");
     background-position: 0 0;
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/callback-bg-tablet@2x.jpg");
+    background-size: 768px auto;
+  }
   }
 
   .callback__form {

@@ -452,6 +452,16 @@ a {
   .contacts__text--tablet {
     display: inline; } }
 
+.button:hover {
+  background-color: #f17d4b;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease; }
+
+.button:active {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease; }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -543,20 +553,21 @@ a {
               order: 10;
       padding-top: 47px; }
   .header__menu-item {
+    margin: 0;
+    margin-bottom: 30px;
+    background-color: #fbf8f8; }
+  .header__menu-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0;
-    margin-bottom: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
     padding: 15px 16px 17px;
-    background-color: #fbf8f8; }
-  .header__menu-link {
     font-size: 20px;
     line-height: 28px;
     font-weight: 600; }
@@ -605,9 +616,14 @@ a {
   width: 100%;
   padding: 183px 22.6% 295px 56%;
   color: #ffffff;
+  background-color: #89aeda;
   background-image: url("../img/start-bg-desktop.jpg");
   background-repeat: no-repeat;
   background-position: -148px -671px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .main {
+      background-image: url("../img/start-bg-desktop@2x.jpg");
+      background-size: 2268px auto; } }
 
 .main__title {
   width: 398px;
@@ -653,7 +669,13 @@ a {
     padding: 60px 185px 83px;
     background-image: url("../img/start-bg-tablet.jpg");
     background-position: -58px -265px;
-    background-size: 116.7% auto; }
+    background-size: 116.7% auto; } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .main {
+      background-image: url("../img/start-bg-tablet@2x.jpg");
+      background-size: 1023px auto; } }
+
+@media (max-width: 1023px) {
   .main__title {
     width: auto;
     margin-bottom: 16px;
@@ -687,7 +709,13 @@ a {
     background-image: url("../img/start-bg-mobile.jpg");
     background-repeat: no-repeat;
     background-position: 41.3% 95.6%;
-    background-size: 119% auto; }
+    background-size: 119% auto; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .main__title {
+      background-image: url("../img/start-bg-mobile@2x.jpg");
+      background-size: 767px auto; } }
+
+@media (max-width: 767px) {
   .main__intro {
     margin: 0 20px 20px;
     line-height: 27.5px;
@@ -927,6 +955,7 @@ a {
   margin-right: auto;
   padding-top: 8px; }
   .country__wrap p {
+    width: 100%;
     margin: 0;
     margin-bottom: 50px;
     letter-spacing: -0.5px; }
@@ -1068,6 +1097,15 @@ a {
     margin-right: 0; }
   .countries__carousel-item--active {
     color: #fe7865; }
+  .countries__carousel-item a:hover {
+    color: #fe7865;
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease; }
+  .countries__carousel-item a:active {
+    color: #f17d4b;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease; }
 
 .countries__list {
   margin: 0;
@@ -1300,6 +1338,7 @@ a {
   margin-left: auto;
   padding-top: 111px; }
   .price__wrap p {
+    width: 100%;
     margin: 0;
     margin-bottom: 63px;
     font-size: 16px;
@@ -1403,6 +1442,10 @@ a {
   background-image: url("../img/countries-bg-desktop.jpg");
   background-repeat: no-repeat;
   background-position: 50% 142px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .countries-wrap {
+      background-image: url("../img/countries-bg-desktop@2x.jpg");
+      background-size: 1444px auto; } }
 
 @media (max-width: 1023px) {
   .countries-wrap {
@@ -1473,6 +1516,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
   margin-bottom: 15px; }
 
 .price-card__item {
@@ -1496,12 +1540,13 @@ a {
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 310px;
-  padding: 30px 70px;
+  padding: 30px 0;
   font-size: 12px;
   line-height: 15px;
   font-weight: 600px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
   color: #ffffff;
   background-color: #fe7865; }
 
@@ -1549,6 +1594,10 @@ a {
   background-image: url("../img/callback-bg-desktop.jpg");
   background-repeat: no-repeat;
   background-position: 45px 0; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .callback {
+      background-image: url("../img/callback-bg-desktop@2x.jpg");
+      background-size: 844px auto; } }
 
 .callback__form {
   margin-left: auto; }
@@ -1559,7 +1608,13 @@ a {
     padding: 71px 20px 73px;
     background-image: url("../img/callback-bg-tablet.jpg");
     background-position: 0 0;
-    background-size: cover; }
+    background-size: cover; } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .callback {
+      background-image: url("../img/callback-bg-tablet@2x.jpg");
+      background-size: 768px auto; } }
+
+@media (max-width: 1023px) {
   .callback__form {
     margin: 0 auto; } }
 
@@ -1800,7 +1855,8 @@ a {
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    width: 100%; }
   .form--modal form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1831,6 +1887,10 @@ a {
       border-color: #fe7865; }
   .form--modal input {
     margin-bottom: 20px; }
+  .form input:hover,
+  .form input:focus {
+    border-color: #f17d4b;
+    outline: none; }
   .form input[type="tel"] {
     padding-left: 26px; }
   .form label {
@@ -1854,6 +1914,14 @@ a {
     color: #ffffff;
     background-color: #fe7865;
     border: none; }
+    .form button[type="submit"]:hover {
+      background-color: #f17d4b;
+      -webkit-transition: color 0.2s ease;
+      transition: color 0.2s ease; }
+    .form button[type="submit"]:active {
+      opacity: 0.5;
+      -webkit-transition: opacity 0.2s ease;
+      transition: opacity 0.2s ease; }
 
 .form__title {
   margin: 0;

@@ -5,9 +5,16 @@
   padding: 183px 22.6% 295px 56%;
   color: $main-text-color;
 
+  background-color: $main-bg-color;
   background-image: url("../img/start-bg-desktop.jpg");
   background-repeat: no-repeat;
   background-position: -148px -671px;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/start-bg-desktop@2x.jpg");
+    background-size: 2268px auto;
+  }
 }
 
 .main__title {
@@ -55,6 +62,12 @@
     background-image: url("../img/start-bg-tablet.jpg");
     background-position: -58px -265px;
     background-size: 116.7% auto;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/start-bg-tablet@2x.jpg");
+    background-size: 1023px auto;
+  }
   }
 
   .main__title {
@@ -105,6 +118,12 @@
     background-repeat: no-repeat;
     background-position: 41.3% 95.6%;
     background-size: 119% auto;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/start-bg-mobile@2x.jpg");
+    background-size: 767px auto;
+  }
   }
 
   .main__intro {

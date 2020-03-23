@@ -1,22 +1,34 @@
 'use strict';
 
 /**
- * Модуль открытия меню шапки
+ * Модуль меню шапки
  */
 (function () {
   var headerButton = document.querySelector('.header__menu-button');
   var headerButtonIcons = headerButton.querySelectorAll('.header__icon');
   var headerMenu = document.querySelector('.header__menu');
+  var menuButtons = headerMenu.querySelectorAll('.header__menu-link');
 
   headerButton.classList.remove('header__menu-button--nojs');
   headerMenu.classList.remove('header__menu--nojs');
 
-  headerButton.addEventListener('click', function () {
+  var toggleMenu = function () {
     headerButton.classList.toggle('header__menu-button--open');
     headerMenu.classList.toggle('header__menu--open');
     document.body.classList.toggle('scroll-hidden');
     headerButtonIcons.forEach(function (item) {
       item.classList.toggle('header__icon--active');
+    });
+  };
+
+  headerButton.addEventListener('click', function () {
+    toggleMenu();
+  });
+
+  menuButtons.forEach(function (item) {
+    item.addEventListener('click', function () {
+      toggleMenu();
+      document.body.classList.remove('scroll-hidden');
     });
   });
 })();

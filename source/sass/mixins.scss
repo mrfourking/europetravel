@@ -29,3 +29,15 @@
     transition: opacity 0.2s ease;
   }
 }
+
+@mixin button-interactive {
+  &:hover {
+    background-color: $accent-color-hover;
+    transition: color 0.2s ease;
+  }
+
+  &:active {
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+  }
+}

@@ -35,6 +35,10 @@
   &--active {
     color: $accent-color;
   }
+
+  a{
+    @include link-interactive;
+  }
 }
 
 .countries__list {

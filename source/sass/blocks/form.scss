@@ -45,6 +45,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
   }
 
   &--modal form {
@@ -74,6 +75,12 @@
 
   &--modal input {
     margin-bottom: 20px;
+  }
+
+  input:hover,
+  input:focus {
+    border-color: $accent-color-hover;
+    outline: none;
   }
 
   input[type="tel"] {
@@ -106,6 +113,8 @@
     background-color: $accent-color;
 
     border: none;
+
+    @include button-interactive;
   }
 }
 
